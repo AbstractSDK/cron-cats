@@ -1,8 +1,8 @@
 [workspace]
 members = [
-  "contracts/*",
-  "packages/*",
-  "scripts",
+  # "contracts/*",
+  "packages/sdk",
+  # "scripts",
 ]
 
 [workspace.package]
@@ -32,6 +32,7 @@ serde = { version = "1.0", default-features = false, features = ["derive"] }
 thiserror = { version = "1.0" }
 cw-storage-plus = "0.16.0"
 cw-controllers = "0.16.0"
+cw-croncat-core = {path = "../cw-croncat/packages/cw-croncat-core"}
 
 [workspace.dev-dependencies]
 cosmwasm-schema = { version = "1.1" }
